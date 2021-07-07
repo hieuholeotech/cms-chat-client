@@ -6,7 +6,6 @@ import Dashboard from '../Pages/Dashboard';
 import Admin from '../Pages/Admin';
 import ChatContent from '../Pages/Chat';
 import SimpleComponent from '../Pages/SimpleComponent';
-import ChatMessage from '../Pages/ChatMessage/ChatMessage';
 
 const PageNotFound = () => <div>Page not found</div>;
 const ProtectedSimpleComponent = withOidcSecure(SimpleComponent);
@@ -28,11 +27,6 @@ const Routes = () => (
     <Route path="/chat">
       <OidcSecure>
         <ChatContent />
-      </OidcSecure>
-    </Route>
-    <Route path="/chatm">
-      <OidcSecure>
-        <ChatMessage />
       </OidcSecure>
     </Route>
     <Route path="/home" component={Home} />

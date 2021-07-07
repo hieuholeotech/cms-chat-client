@@ -8,6 +8,7 @@ import CustomCallback from './Pages/CustomCallback';
 import Header from './Layout/Header';
 import Routes from './Router';
 import oidcConfiguration from './configuration';
+import './App.css'
 
 const App = () => (
   <div>
